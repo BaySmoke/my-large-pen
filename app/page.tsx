@@ -18,7 +18,7 @@ export default function Home() {
             {
               name: "Mega Besos Vape Pen",
               price: "$149.99",
-              img: "/besos.JPG",
+              img: "/besos.jpg",
             },
             {
               name: "Mega Sweetz Vape Pen",
