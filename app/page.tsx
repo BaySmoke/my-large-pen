@@ -18,32 +18,32 @@ export default function Home() {
             {
               name: "Mega Besos Vape Pen",
               price: "$149.99",
-              img: "public/besos.jpg",
+              img: "/besos.jpg",
             },
             {
               name: "Mega Sweetz Vape Pen",
               price: "$149.99",
-              img: "/products/pink.webp",
+              img: "/sweetz.jpg",
             },
             {
               name: "Mega Locked & Loaded Vape Pen",
               price: "$149.99",
-              img: "/products/mega-white.webp",
+              img: "/mega-white.webp",
             },
             {
               name: "Mega Mad Labs Vape Pen",
               price: "$149.99",
-              img: "/products/mega-blue.webp",
+              img: "/mega-blue.webp",
             },
             {
               name: "Mega Zet Extracts Vape Pen",
               price: "$149.99",
-              img: "/products/zet-blue.webp",
+              img: "/zet-blue.webp",
             },
             {
               name: "Mega BowHouse Vape Pen",
               price: "$149.99",
-              img: "/products/mad-red.webp",
+              img: "/mad-red.webp",
             },
           ].map((p, i) => (
             <div
@@ -60,7 +60,9 @@ export default function Home() {
                 {p.name}
               </h3>
 
-              <p className="text-gray-800 font-bold mb-4">{p.price}</p>
+              <p className="text-gray-800 font-bold mb-4">
+                {p.price}
+              </p>
 
               <button className="bg-pink-500 text-white px-5 py-2 rounded-lg hover:bg-pink-600 transition">
                 VIEW DETAILS
