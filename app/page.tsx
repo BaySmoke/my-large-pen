@@ -1,45 +1,19 @@
 export default function Home() {
   return (
-    <main className="w-full flex flex-col items-center">
+    <main className="w-full flex flex-col items-center bg-white">
 
-      {/* HERO SECTION */}
-      <section className="w-full bg-gradient-to-b from-sky-100 to-white pt-24 pb-20 px-6 text-center">
-        <h2 className="text-sm font-semibold tracking-wide text-gray-600">
-          WELCOME TO
-        </h2>
-
-        <h1 className="text-4xl md:text-5xl font-extrabold mt-1">
+      {/* PRODUCT GRID SECTION */}
+      <section className="w-full max-w-7xl pt-28 px-6 pb-24">
+        
+        <h1 className="text-4xl font-extrabold text-center mb-4">
           MY LARGE <span className="text-pink-500">PENS</span>
         </h1>
 
-        <p className="text-gray-600 mt-3 text-lg">
-          The Best Place to Buy Oversized Vape Pens!
+        <p className="text-center text-gray-600 text-lg mb-12">
+          Oversized vape pens — custom, collectible, and massive.
         </p>
 
-        <button className="mt-6 bg-pink-500 text-white px-8 py-3 rounded-lg shadow hover:bg-pink-600 transition">
-          SHOP NOW
-        </button>
-
-        <div className="mt-12 flex justify-center">
-          <img
-            src="/hero-example.png"
-            className="rounded-xl w-full max-w-3xl"
-            alt="Hero"
-          />
-        </div>
-      </section>
-
-      {/* PRODUCT GRID SECTION */}
-      <section className="w-full max-w-7xl pt-16 px-6 pb-24">
-        <h2 className="text-3xl font-bold text-center">
-          OUR LARGE PENS
-        </h2>
-
-        <p className="text-center text-gray-600 mt-2 mb-10">
-          Browse our oversized vape pens for sale!
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {[
             {
               name: "Stealth Black Vape Pen",
@@ -74,16 +48,12 @@ export default function Home() {
           ].map((p, i) => (
             <div
               key={i}
-              className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center"
+              className="bg-white rounded-xl shadow-xl p-6 flex flex-col items-center hover:shadow-2xl transition"
             >
-              <span className="bg-pink-500 text-white text-xs px-3 py-1 rounded-full mb-3">
-                NEW
-              </span>
-
               <img
                 src={p.img}
                 alt={p.name}
-                className="w-40 h-40 object-contain mb-4"
+                className="w-44 h-44 object-contain mb-6"
               />
 
               <h3 className="font-semibold text-lg text-center mb-1">
@@ -92,14 +62,13 @@ export default function Home() {
 
               <p className="text-gray-800 font-bold mb-4">{p.price}</p>
 
-              <button className="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+              <button className="bg-pink-500 text-white px-5 py-2 rounded-lg hover:bg-pink-600 transition">
                 VIEW DETAILS
               </button>
             </div>
           ))}
         </div>
       </section>
-
     </main>
   );
 }
