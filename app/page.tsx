@@ -16,32 +16,32 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {[
             {
-              name: "Stealth Black Vape Pen",
+              name: "Mega Besos Vape Pen",
               price: "$149.99",
               img: "/products/black.webp",
             },
             {
-              name: "Swizz Pink Vape Pen",
+              name: "Mega Sweetz Vape Pen",
               price: "$149.99",
               img: "/products/pink.webp",
             },
             {
-              name: "Mega White Vape Pen",
+              name: "Mega Locked & Loaded Vape Pen",
               price: "$149.99",
               img: "/products/mega-white.webp",
             },
             {
-              name: "Mega White Vape Pen (Blue Dream)",
+              name: "Mega Mad Labs Vape Pen",
               price: "$149.99",
               img: "/products/mega-blue.webp",
             },
             {
-              name: "Zet Extracts Blue Vape Pen",
+              name: "Mega Zet Extracts Vape Pen",
               price: "$149.99",
               img: "/products/zet-blue.webp",
             },
             {
-              name: "MAD RED 100+ Vape Pen",
+              name: "Mega BowHouse Vape Pen",
               price: "$149.99",
               img: "/products/mad-red.webp",
             },
